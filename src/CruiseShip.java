@@ -2,7 +2,7 @@
 import java.util.ArrayList;
 
 public class CruiseShip {
-    String name = new String();
+    String name;
     int capacity;
     private ArrayList<Destination> itinerary;
     private ArrayList<Passenger> passengers;
