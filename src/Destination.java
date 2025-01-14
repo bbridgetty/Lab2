@@ -19,13 +19,12 @@ public class Destination { //create constructor that will take in a name and set
             System.out.println(activities.get(i).cost);
             System.out.println(activities.get(i).capacity);
             if(activities.get(i) instanceof TheatreShow){
-                System.out.println(activities.get(i).getStars());
+                System.out.println(((TheatreShow) activities.get(i)).getStars());
             }
-            else if(Activity instanceof WalkingTour){
-                System.out.println(WalkingTour.distance);
+            else if(activities.get(i) instanceof WalkingTour){
+                System.out.println(((WalkingTour) activities.get(i)).getDistance());
             }
         }
-    }
     }
 }
 /*
