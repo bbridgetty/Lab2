@@ -37,8 +37,8 @@ public class CruiseShip {
     }
 
     // remove passenger from the cruise ship
-    public void removePassengers(Passenger passenger){
-        if(passengers.contains(passenger)) passengers.remove(passenger);
+    public void removePassengers(Passenger passenger) {
+        if (passengers.contains(passenger)) passengers.remove(passenger);
     }
 
     // add a destination to the cruise ship
