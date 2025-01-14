@@ -13,21 +13,19 @@ public class Destination { //create constructor that will take in a name and set
         }
     }
     public void itinerary(){
-        for(int j = 0; j<Destination.size(); j++){
-            System.out.println(name);
-            for(int i = 0; i<activities.size(); i++){
-                System.out.println(activities.get(i).name);
-                System.out.println(activities.get(i).description);
-                System.out.println(activities.get(i).cost);
-                System.out.println(activities.get(i).capacity);
-                if(Activity instanceof TheatreShow){
-                    System.out.println(TheatreShow.stars);
-                }
-                else if(Activity instanceof WalkingTour){
-                    System.out.println(WalkingTour.distance);
-                }
+        for(int i = 0; i<activities.size(); i++){
+            System.out.println(activities.get(i).name);
+            System.out.println(activities.get(i).description);
+            System.out.println(activities.get(i).cost);
+            System.out.println(activities.get(i).capacity);
+            if(activities.get(i) instanceof TheatreShow){
+                System.out.println(activities.get(i).getStars());
+            }
+            else if(Activity instanceof WalkingTour){
+                System.out.println(WalkingTour.distance);
             }
         }
+    }
     }
 }
 /*
