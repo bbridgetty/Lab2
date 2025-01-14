@@ -45,8 +45,9 @@ public class CruiseShip {
     public void addDestination(Destination destination){
         itinerary.add(destination);
     }
-    /*public void print(){
+
+    public void print(){
         System.out.println(itinerary);
         System.out.println(passengers);
-    }*/
+    }
 }
