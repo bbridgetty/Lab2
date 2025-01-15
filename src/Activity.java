@@ -3,16 +3,24 @@ public class Activity {
     String description = new String();
     double cost;
     int capacity;
+    private int currentSize;
+    private String destination;
 
-    public Activity(String name, String description, double cost, int capacity){
+
+
+    public Activity(String name, String description, double cost, int capacity){ //setters
         this.name = name;
         this.description = description;
         this.cost = cost;
         this.capacity = capacity;
+        this.description = description;
 
     }
+    public void updateSize(){
+        currentSize++;
+    }
     public boolean signUp(Destination destination, Passenger passenger){
-        if(passenger.signUps.containsKey(destination)||(destination.name.length()>=capacity)){
+        if(passenger.signUps.containsKey(destination)||(destination.getName().length()>=capacity)){
             return false;
         }
 

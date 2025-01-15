@@ -25,7 +25,7 @@ public class Passenger {
         return activityList;
     }
 
-    public void setName(String name) {
+    public void setName() {
         this.name = name;
     }
 

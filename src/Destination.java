@@ -1,9 +1,16 @@
 import java.util.ArrayList;
 
 public class Destination { //create constructor that will take in a name and set name (same as activity)
-    String name = new String(); //initialised with a default value
-    ArrayList<Activity> activities = new ArrayList<>();
-    public Destination(){ //first instance that the code will run for the destination
+    private String name; // name of destination
+    private ArrayList<Activity> activities; // list of activities in the destination
+
+    public Destination(String name){
+        this.name = name;
+        activities = new ArrayList<>();
+    }
+
+    public String getName(){
+        return name;
     }
     public void capacity(){
         for(int i = 0; i<activities.size(); i++){
